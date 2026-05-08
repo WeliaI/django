@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<main>
+    {% extends "testProject/base.html" %}
+    {% block title %}Article {{article.id}}{% endblock %}
+    {% block content %}
+        <div class="row">
+            <div class="col-sm">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.text }}</p>
+            </div>
+        </div>
+    {% endblock %}
+</main>
+</html>
